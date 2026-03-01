@@ -21,17 +21,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <ProtectedRoute allow="USER">
       <div className="min-h-screen bg-gray-50">
-        <header className="border-b bg-white">
-          <div className="mx-auto flex max-w-5xl items-center justify-between p-4">
-            <div className="font-semibold">User Panel</div>
-            <nav className="flex items-center gap-3 text-sm">
-              <a className="hover:underline" href="/app/files">Files</a>
-              <a className="hover:underline" href="/app/subscription">Subscription</a>
-              <button className="rounded-xl border px-3 py-1 hover:bg-gray-50" onClick={logout}>Logout</button>
-            </nav>
-          </div>
-        </header>
-
         <main className="mx-auto max-w-5xl p-4 space-y-4">
           <VerifyEmailBanner />
           {children}
