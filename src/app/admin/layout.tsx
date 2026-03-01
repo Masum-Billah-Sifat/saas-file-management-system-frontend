@@ -24,7 +24,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <div className="mx-auto flex max-w-5xl items-center justify-between p-4">
             <div className="font-semibold">Admin Panel</div>
             <nav className="flex items-center gap-3 text-sm">
-              <a className="hover:underline" href="/admin">Dashboard</a>
+              {/* <a className="hover:underline" href="/admin">Dashboard</a> */}
               <button className="rounded-xl border px-3 py-1 hover:bg-gray-50" onClick={logout}>Logout</button>
             </nav>
           </div>
